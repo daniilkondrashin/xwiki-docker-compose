@@ -36,15 +36,6 @@ services:
       - "--explicit-defaults-for-timestamp=1"
     networks:
       - bridge
-  nginx:
-    image: nginx:alpine
-    container_name: nginx
-    volumes:
-      - ./nginx/nginx.conf:/etc/nginx/conf.d/nginx.conf
-    ports:
-      - "80:80"
-    depends_on:
-      - web
 volumes:
   mysql-data: {}
   xwiki-data: {}
