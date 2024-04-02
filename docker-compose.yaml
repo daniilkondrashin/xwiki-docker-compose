@@ -3,7 +3,7 @@ networks:
   bridge:
     driver: bridge
 services:
-  web:
+  xwiki-web:
     image: "xwiki:stable-mysql-tomcat"
     container_name: xwiki-mysql-tomcat-web
     depends_on:
