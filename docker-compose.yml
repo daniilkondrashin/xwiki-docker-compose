@@ -20,7 +20,7 @@
 version: '2'
 networks:
   xwiki-bridge:
-    external: true
+    driver: bridge
 services:
   # The container that runs XWiki in Tomcat, with the appropriate JDBC driver (for mysql).
   web:
